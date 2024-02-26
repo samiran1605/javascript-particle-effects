@@ -140,6 +140,7 @@ document.addEventListener('DOMContentLoaded', function () {
             for (let i = 0; i < this.particles.length; i++) {
                 for (let j = i; j < this.particles.length; j++) {
                     const dx = this.particles[i].x - this.particles[j].x;
+                    // console.log(dx)
                     const dy = this.particles[i].y - this.particles[j].y;
                     const distance = Math.hypot(dx, dy);
                     if (distance < maxDistance) {
